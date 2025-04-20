@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Donate - Support My Work</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffffff;
+      color: #1a202c;
+      padding: 0;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0;
+      gap: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1, h2 {
+      text-align: center;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin: 0.5rem 0;
+    }
+    
+    .centertext {
+      text-align: center;
+    }
+
+    .note {
+      font-size: 0.875rem;
+      color: #718096;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      font-size: 0.875rem;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 0.5rem;
+      border: 1px solid #e2e8f0;
+      vertical-align: center;
+    }
+    th {
+        text-align: center;
+    }
+
+    thead {
+      background-color: #f7fafc;
+    }
+
+    code {
+      font-family: monospace;
+      background-color: #f1f5f9;
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+      word-break: break-all;
+      display: inline-block;
+    }
+
+    .copy-btn {
+      cursor: pointer;
+      background-color: #e2e8f0;
+      padding: 4px 0px;
+      border-radius: 6px;
+      font-size: 0.875rem;
+      border: none;
+      min-width: 70px;
+      max-width: 70px;
+      text-align: center;
+    }
+
+    .copy-btn:hover {
+      background-color: #f1f5f9;
+    }
+
+    img {
+      width: 64px;
+    }
+
+    .section {
+      margin-top: 1rem;
+      max-width: 500px;
+    }
+
+    .card {
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+      color: #2d3748;
+    }
+
+    .card code {
+      display: inline;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 0rem;
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+    }
+
+    a {
+      color: #3182ce;
+      text-decoration: underline;
+    }
+
+    a:hover {
+      font-weight: 600;
+      color: #2b6cb0;
+    }
+
+    @media (max-width: 600px) {
+      table {
+        font-size: 0.75rem;
+      }
+
+      img {
+        width: 48px;
+      }
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+    <h1>❤️ Support My Work</h1>
+    <p class="centertext">If you find my work helpful, feel free to support me through any of the following options:</p>
+    <p class="note centertext">⚠️ ETH and BTC have high fees — please use them only for $20+ donations. For smaller tips, use Polygon, BSC, or Solana.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Currency</th>
+          <th>Network</th>
+          <th>Wallet Address</th>
+          <th>Copy</th>
+          <th>QR</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>USDT / USDC /<br>DAI / MATIC</td>
+          <td>Polygon</td>
+          <td><code id="addr1">0x383621896bFCc5D21030381738064B535F8860C0</code></td>
+          <td><button class="copy-btn" onclick="copyToClipboard('addr1', this)">📋 Copy</button></td>
+          <td><img src="qr/polygon.png" alt="QR Polygon" /></td>
+        </tr>
+        <tr>
+          <td>USDT / USDC /<br>BUSD / BNB</td>
+          <td>BSC</td>
+          <td><code id="addr2">0x383621896bFCc5D21030381738064B535F8860C0</code></td>
+          <td><button class="copy-btn" onclick="copyToClipboard('addr2', this)">📋 Copy</button></td>
+          <td><img src="qr/bsc.png" alt="QR BSC" /></td>
+        </tr>
+        <tr>
+          <td>USDT / USDC /<br>SOL / USDC</td>
+          <td>Solana (SPL)</td>
+          <td><code id="addr3">Bs6mNrhbmVY5LMTPX8b9ugvW89HD7Nt2JqNhRhqoTWPZ</code></td>
+          <td><button class="copy-btn" onclick="copyToClipboard('addr3', this)">📋 Copy</button></td>
+          <td><img src="qr/solana.png" alt="QR Solana" /></td>
+        </tr>
+        <tr>
+          <td>TON</td>
+          <td>TON</td>
+          <td><code id="addr4">UQDnoZA1tAt2FtEwDdPjs163uNnc5hWcvfRC1_DDmOdBdtxa</code></td>
+          <td><button class="copy-btn" onclick="copyToClipboard('addr4', this)">📋 Copy</button></td>
+          <td><img src="qr/ton.png" alt="QR TON" /></td>
+        </tr>
+        <tr>
+          <td>USDT (TRC20) /<br>TRX</td>
+          <td>Tron</td>
+          <td><code id="addr5">TAocV8kGRbt8NAR7YddBtjHSZiTWLnvR6D</code></td>
+          <td><button class="copy-btn" onclick="copyToClipboard('addr5', this)">📋 Copy</button></td>
+          <td><img src="qr/tron.png" alt="QR TRON" /></td>
+        </tr>
+        <tr>
+          <td>ETH (≥ $20)</td>
+          <td>Ethereum</td>
+          <td><code id="addr6">0x876873B11c5EBC5259A2ebaC4bde6A5c11b0247b</code></td>
+          <td><button class="copy-btn" onclick="copyToClipboard('addr6', this)">📋 Copy</button></td>
+          <td><img src="qr/eth.png" alt="QR ETH" /></td>
+        </tr>
+        <tr>
+          <td>BTC (≥ $20)</td>
+          <td>Bitcoin</td>
+          <td><code id="addr7">bc1q6q33xlq4lca9txphtenmk7dpq5np2hxc5up3hw</code></td>
+          <td><button class="copy-btn" onclick="copyToClipboard('addr7', this)">📋 Copy</button></td>
+          <td><img src="qr/btc.png" alt="QR BTC" /></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="section">
+      <h2>💳 Non-Crypto Donations</h2>
+      <div class="card">
+        <p><strong>Payeer (USD / EUR):</strong></p>
+        <code id="payeer">P1130665174</code>
+        &nbsp;&nbsp;&nbsp;
+        <button class="copy-btn" onclick="copyToClipboard('payeer', this)">📋 Copy</button>
+      </div>
+
+      <div class="card">
+        <p><strong>Gift Card:</strong></p>
+        Apple Gift Card (US Only)
+        <p>Please send to email:</p>
+        <code id="donateemail">zgccoding.fund@gmail.com</code>
+        &nbsp;&nbsp;&nbsp;
+        <button class="copy-btn" onclick="copyToClipboard('donateemail', this)">📋 Copy</button>
+      </div>
+
+      <div class="card">
+        <p dir="rtl"><strong>حمایت با تومان:</strong></p>
+        <p dir="rtl">برای حمایت به تومان، لطفا از
+          <a href="https://donito.me/zgccoding" target="_blank" rel="noopener noreferrer">این صفحه</a>
+          استفاده کنید.
+        </p>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>Thank you for your support 🙏</p>
+      <p>
+        Follow me on
+        <a href="https://www.youtube.com/@zgcCoding" target="_blank" rel="noopener noreferrer">YouTube</a>
+      </p>
+    </footer>
+  </div>
+
+  <script>
+  function copyToClipboard(id, btn) {
+  const text = document.getElementById(id).textContent;
+  navigator.clipboard.writeText(text).then(() => {
+    const original = btn.innerHTML;
+    btn.innerHTML = '✅';
+    btn.disabled = true;
+
+    setTimeout(() => {
+      btn.innerHTML = original;
+      btn.disabled = false;
+    }, 500);
+  });
+}
+  </script>
+</body>
+</html>
