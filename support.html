@@ -119,6 +119,14 @@
     .card code {
       display: inline;
     }
+    
+    .rowobj {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+    }
 
     .footer {
       text-align: center;
@@ -180,8 +188,8 @@
           <td><img src="qr/bsc.png" alt="QR BSC" /></td>
         </tr>
         <tr>
-          <td>USDT / USDC /<br>SOL / USDC</td>
-          <td>Solana (SPL)</td>
+          <td>USDT (SPL) /<br>USDC (SPL) /<br>SOL</td>
+          <td>Solana</td>
           <td><code id="addr3">Bs6mNrhbmVY5LMTPX8b9ugvW89HD7Nt2JqNhRhqoTWPZ</code></td>
           <td><button class="copy-btn" onclick="copyToClipboard('addr3', this)">📋 Copy</button></td>
           <td><img src="qr/solana.png" alt="QR Solana" /></td>
@@ -230,17 +238,20 @@
         <p><strong>Gift Card:</strong></p>
         Apple Gift Card (US Only)
         <p>Please send to email:</p>
-        <code id="donateemail">zgccoding.fund@gmail.com</code>
+        <code id="donateemail">zgccoding@gmail.com</code>
         &nbsp;&nbsp;&nbsp;
         <button class="copy-btn" onclick="copyToClipboard('donateemail', this)">📋 Copy</button>
       </div>
 
-      <div class="card">
+      <div class="card rowobj">
+        <img src="qr/donito.png" alt="QR DONITO" />
+        <div>
         <p dir="rtl"><strong>حمایت با تومان:</strong></p>
         <p dir="rtl">برای حمایت به تومان، لطفا از
           <a href="https://donito.me/zgccoding" target="_blank" rel="noopener noreferrer">این صفحه</a>
           استفاده کنید.
         </p>
+        </div>
       </div>
     </div>
 
